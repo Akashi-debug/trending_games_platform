@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header*/
+body {
+    background-color: #232323;
+    color: white;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.header .logo {
+    font-size: 40px;
+    font-family: "Jaro", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #343A40;
+    color: white;
+}
+
+.header .logo span {
+    color: #E9D8A6;
+
+}
+
+.header .container iframe {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.header .container p {
+    font-family: "Jaro", serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+/*Top10*/
+.games .card {
+    margin-block: 7rem;
+}
+
+
+.games .card .card-content {
+    display: flex;
+}
+
+.games .card .card-content .img-container {
+    width: 50%;
+}
+
+.games .card .card-content .img-container img {
+    border-radius: 28px;
+    width: 70%;
+    aspect-ratio: 3/4;
+    margin: auto;
+}
+
+.games .card .card-content .requirements_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-inline: 30px;
+    border: 3px solid #111111;
+    border-radius: 28px;
+    background-color: #232323;
+    overflow: hidden;
+}
+
+.games .card .card-content .requirements_container h4 {
+    font-size: 40px;
+    font-family: "Fira Sans", serif;
+    font-weight: 1000;
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.games .card .card-content .requirements_container .requirements {
+    font-size: 26px;
+    margin-block: 20px;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    width: 100%;
+    align-content: center;
+}
+
+.games .card .card-content .requirements_container .requirements ul li {
+    padding-block: 10px;
+    border-bottom: 2px #464646 solid;
+    max-width: 90%;
+    margin: auto;
+
+}
+
+
+.games .card .card-content .requirements_container .shadowbox {
+    width: 100%;
+    padding-block: 2rem;
+    background-color: #343434;
+}
+
+.games .card .card-content .requirements_container .shadowbox a {
+    border: 3px solid #CA6702;
+    border-radius: 10px;
+    background-color: #111111;
+    box-shadow: inset 0 0 0 0 #111111;
+    color: #CA6702;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.games .card .card-content .requirements_container .shadowbox a:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 #CA6702;
+    border: 3px #111111 solid;
+
+}
+
+.card .desc {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding-block: 20px;
+}
+
+/**Footer**/
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #34495e;
+}
+
+@media (max-width: 700px) {
+    .header .container iframe {
+        width: 100%;
+    }
+
+    .games .card .card-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .games .card .card-content .img-container {
+        width: 100%;
+    }
+
+    .games .card .card-content .requirements_container {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }   
+}
