@@ -213,4 +213,9 @@ footer {
         flex-direction: column;
         text-align: center;
     }   
+    
+    .desc p {
+        text-align: center;
+        width: 10px;
+    }
 }
