@@ -212,10 +212,14 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
-    }   
-    
+    }
+
+    .card .desc {
+        width: 100%;
+    }
+
     .desc p {
-        text-align: center;
-        width: 10px;
+        text-align: justify;
+        font-size: 20px;
     }
 }
